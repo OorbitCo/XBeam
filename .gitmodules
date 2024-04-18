@@ -1,0 +1,6 @@
+[submodule "WorkloadIaaC"]
+	path = WorkloadIaaC
+	url = https://github.com/OorbitCo/WorkloadIaaC
+[submodule "WorkloadInstaller"]
+	path = WorkloadInstaller
+	url = https://github.com/OorbitCo/workload-installer
