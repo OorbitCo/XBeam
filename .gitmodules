@@ -4,3 +4,6 @@
 [submodule "WorkloadInstaller"]
 	path = WorkloadInstaller
 	url = https://github.com/OorbitCo/workload-installer
+[submodule "InfraHelper"]
+	path = InfraHelper
+	url = https://github.com/OorbitCo/SideInfra
