@@ -85,9 +85,9 @@ Full command example:
 Installer.exe -k c:\users\oorbit\desktop\XBeam\WorkloadIaaC\kubeconfig -s smb://shareduser:oorbitpassword@217.219.65.84/mygames -c oorbit-pub.cert -p oorbit-priv.key -r amqps://oorbitbroker:oorbitpasword@b-94d8e31a-243c-4c29-a87a-6bb8b7822f3e.mq.us-west-2.amazonaws.com -g us-east-1
 ```
 
-13. Upload UE5 pixel streaming enabled games to your SMB enabled network drive. 
+12. Upload UE5 pixel streaming enabled games to your SMB enabled network drive. 
 
-14. To start a game, publish the Json below on `create.pod` exchange in your RabbitMQ. 
+13. To start a game, publish the Json below on `create.pod` exchange in your RabbitMQ. 
 Set your desired AWS region as the `routing-key`.
 Use the following example path `Games/Linux/Spaceship/SpaceshipCruiser.sh` that is relative to the shared directory, e.g `mygames`.
 
@@ -141,12 +141,12 @@ Parameter Details:
 `dynamic`: uses predefined values set by Oorbit infra.  
 GPU resources are managed by Oorbit infra.  
 
-15. Establish connection to a running game: 
+14. Establish connection to a running game: 
 Listen to `on.pod.created` Queue in RabbitMQ, this will provide the IP and port of the running game.
 For a successful stream, the IP and port must be converted to a URL via the domain provided in step 11. 
 (you can use any conversion service such as [sslip.io](https://sslip.io/) for easy, on the fly conversion)
 
-16. The game will auto stop on two conditions:
+15. The game will auto stop on two conditions:
 	60s timer if no connection is detected.
 60s after the stream has been disconnected.
 
