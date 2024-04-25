@@ -156,7 +156,7 @@ For a successful stream, the IP and port must be converted to a URL via the doma
 
 
 
-Any questions or further assistance please contact us: support@oorbit.com
+Any questions or further assistance please contact us: info@oorbit.tv
 
 
 	
